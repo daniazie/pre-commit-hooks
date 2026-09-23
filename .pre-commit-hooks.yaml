@@ -1,6 +1,7 @@
 - id: update-pytorch-index
   name: Update pytorch index
   description: This hooks changes the pytorch index in pyproject.toml to cu130
+  entry: update-pytorch-index
   language: python
   types: [python]
   stages: [pre-commit, pre-merge-commit, manual]
