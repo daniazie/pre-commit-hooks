@@ -5,4 +5,4 @@
   language: python
   types: [toml]
   stages: [pre-commit, pre-merge-commit, manual]
-  files: "\.(.+)/pyproject.toml"
+  files: "\\.(.+)/pyproject.toml"
