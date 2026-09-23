@@ -24,7 +24,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         with open(pyproj_file, "w") as file:
             file.write(new_pyproj)
 
-        retval |= np.int8(new_pyproj == data).item()
+        retval |= np.int8(new_pyproj != data).item()
         
     return retval
 
