@@ -3,6 +3,6 @@
   description: This hooks changes the pytorch index in pyproject.toml to cu130
   entry: update-pytorch-index
   language: python
-  types: [python]
+  types: [toml]
   stages: [pre-commit, pre-merge-commit, manual]
   files: "*/pyproject.toml"
