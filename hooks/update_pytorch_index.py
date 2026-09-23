@@ -16,8 +16,6 @@ def main(argv: Sequence[str] | None = None) -> int:
     replace = "\\2cu130\""
 
     for pyproj_file in args.filenames:
-        if not "pyproject.toml" in pyproj_file:
-            continue
         with open(pyproj_file, "r") as file:
             data = file.read()
 
